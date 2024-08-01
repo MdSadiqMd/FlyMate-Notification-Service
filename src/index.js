@@ -1,8 +1,6 @@
 const express = require("express");
 
-const config = require("./config/server.config.js");
-const logger = require("./config/logger.config.js");
-
+const { config, logger } = require("./config");
 const app = express();
 
 app.use(express.json());

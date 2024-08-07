@@ -1,6 +1,11 @@
+const logger = require("./logger.config");
+const config = require("./server.config");
+const MAILER = require("./email.config");
+const Queue = require("./queue.config");
+
 module.exports = {
-  config: require("./server.config"),
-  MAILER: require("./email.config"),
-  Queue: require("./queue.config"),
-  logger: require("./logger.config"),
+  config,
+  MAILER,
+  Queue,
+  logger,
 };
